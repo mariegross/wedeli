@@ -1,8 +1,8 @@
 {
-  "name": "react-template",
+  "name": "WeDeli",
   "private": "true",
   "version": "1.0.0",
-  "description": "Template for create-react-app with express.js API",
+  "description": "An App to share your own recipes with friends and family - to create a shared cookbook.",
   "main": "server.js",
   "scripts": {
     "postinstall": "cd client && npm install",
@@ -20,22 +20,33 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariegross/react-template.git"
+    "url": "git+https://github.com/mariegross/wedeli.git"
   },
   "author": "Marie Groß",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mariegross/react-template/issues"
+    "url": "https://github.com/mariegross/wedeli/issues"
   },
-  "homepage": "https://github.com/mariegross/react-template#readme",
+  "homepage": "https://github.com/mariegross/wedeli#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
     "concurrently": "^5.3.0",
-    "eslint": "^7.14.0",
+    "eslint": "^7.19.0",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
     "nodemon": "^2.0.6",
-    "prettier": "2.2.0"
+    "prettier": "2.2.0",
+    "typescript": "^4.1.3"
   },
   "husky": {
     "hooks": {
