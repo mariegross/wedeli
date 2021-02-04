@@ -1,10 +1,10 @@
 import "./App.css";
-import ExButton from "./components/Button";
+// import ExButton from "./components/Button";
 
 function App() {
   return (
     <div className="App">
-      <ExButton />
+      <button />
       <a href="/storybook">To Storybook</a>
     </div>
   );
