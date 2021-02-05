@@ -5,8 +5,8 @@ import "./styles/App.css";
 function App() {
   return (
     <div className="App">
-      <button />
-      <a href="/storybook">To Storybook</a>
+      <h1>WeDeli</h1>
+      <a href="https://www.google.com/">Google</a>
     </div>
   );
 }
