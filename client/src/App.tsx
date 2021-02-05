@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.css";
 // import ExButton from "./components/Button";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
