@@ -105,3 +105,4 @@ dist
 
 #css files
 *.css
+*.css.map
