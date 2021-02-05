@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>WeDeli</h1>
-      <a href="https://www.google.com/">Google</a>
+      <a href="https://www.google.com/">To Google</a>
     </div>
   );
 }
