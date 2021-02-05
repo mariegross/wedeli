@@ -13,10 +13,10 @@
     "prettify": "prettier --write .",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "cd client && npm start",
-    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx,md,mdx,html,css,json}\"",
-    "server": "nodemon server.js",
+    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx,md,mdx,html,json}\"",
+    "server": "nodemon server.tsx",
     "storybook": "cd client && npm run storybook",
-    "start": "node server.js"
+    "start": "node server.tsx"
   },
   "repository": {
     "type": "git",
