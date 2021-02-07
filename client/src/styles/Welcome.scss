@@ -1,0 +1,78 @@
+@import "./variables";
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+body {
+  background: $mainBackground;
+}
+
+.WelcomeWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: $emphFont;
+  font-size: 6.5rem;
+  color: $emphDark;
+  margin: 0;
+}
+
+p {
+  font-family: $mainFont;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  color: $emphBang;
+  -webkit-animation: breathing 3s ease-in-out infinite alternate;
+  animation: breathing 3s ease-in-out infinite alternate;
+  -webkit-font-smoothing: antialiased;
+}
