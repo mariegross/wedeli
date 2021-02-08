@@ -11,7 +11,7 @@ import "../styles/RecipeCard.css";
 
 export const RecipeCard: React.FC = () => {
   return (
-    <div>
+    <div className="RecipeCardWrapper">
       <h3>Pancakes</h3>
     </div>
   );
