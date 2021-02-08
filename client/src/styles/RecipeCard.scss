@@ -1,0 +1,13 @@
+@import "./variables";
+
+.RecipeCardWrapper {
+  height: 200px;
+  width: 100%;
+  background: white;
+  border-radius: 30px;
+}
+
+h3 {
+  color: $emphBang;
+  margin: 1rem 1.4rem;
+}

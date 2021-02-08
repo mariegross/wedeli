@@ -1,13 +1,26 @@
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
+// Pages
+import Welcome from "./pages/Welcome";
+import Dashboard from "./pages/Dashboard";
 // import ExButton from "./components/Button";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function App() {
   return (
-    <div className="App">
-      <h1>WeDeli</h1>
-      <a href="https://www.google.com/">To Google</a>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Welcome />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
