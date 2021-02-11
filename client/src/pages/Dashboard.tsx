@@ -5,7 +5,7 @@ import { RecipeCard } from "../components/RecipeCard";
 function Dashboard(): JSX.Element {
   return (
     <div className="Wrapper">
-      <h2>Lass dich inspirieren...</h2>
+      <h2 className="DashboardTitle">Lass dich inspirieren...</h2>
       <RecipeCard />
     </div>
   );
