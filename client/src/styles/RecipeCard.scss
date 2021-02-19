@@ -1,13 +1,80 @@
 @import "./variables";
 
 .RecipeCardWrapper {
-  height: 200px;
-  width: 100%;
+  max-width: 100%;
+  height: 55%;
   background: white;
   border-radius: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-h3 {
+.ImageContainer {
+  grid-column-start: 1 / span 1;
+  position: relative;
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+}
+
+.TextContainer {
+  grid-column-start: 2;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.RecipeCardTitle {
+  font-family: $mainFont;
+  font-size: 1.4rem;
+  color: $emphDark;
+  margin: 0;
+}
+.IconDetail {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  p:first-of-type {
+    margin-right: 1.35rem;
+  }
+}
+
+.IconDetailImg {
+  margin-right: 0.5rem;
+}
+
+.IconDetailText {
+  display: inline-block;
+  font-family: $mainFont;
+  font-size: 0.9rem;
   color: $emphBang;
-  margin: 1rem 1.4rem;
+  margin: 0;
+}
+
+.RecipeCardTagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+}
+
+.RecipeCardTag {
+  margin: 0;
+  border: 1.8px solid $emphBang;
+  border-radius: 30px;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.RecipeCardTagText {
+  font-family: $mainFont;
+  color: $emphBang;
+  font-size: 0.9rem;
 }

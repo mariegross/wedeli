@@ -8,8 +8,8 @@ function Welcome(): JSX.Element {
 
   return (
     <div className="WelcomeWrapper" onClick={() => history.push("/dashboard")}>
-      <h1>WeDeli</h1>
-      <p>Click to continue</p>
+      <h1 className="Logo">WeDeli</h1>
+      <p className="WelcomeSubtitle">Click to continue</p>
     </div>
   );
 }
