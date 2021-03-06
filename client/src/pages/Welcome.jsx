@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 // Styles
 import "../styles/Welcome.css";
 
-function Welcome(): JSX.Element {
+function Welcome() {
   const history = useHistory();
 
   return (

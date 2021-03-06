@@ -14,7 +14,7 @@ import Person from "../assets/person.svg";
 //   image: string;
 // };
 
-export const RecipeCard: React.FC = () => {
+export const RecipeCard = () => {
   return (
     <div className="RecipeCardWrapper">
       <div className="ImageContainer">

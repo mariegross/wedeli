@@ -6,7 +6,6 @@ import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/Dashboard";
 // import ExButton from "./components/Button";
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function App() {
   return (
     <>

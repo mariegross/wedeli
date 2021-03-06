@@ -5,14 +5,10 @@
     "es2021": true,
     "node": true
   },
-  "parser": "@typescript-eslint/parser",
   "extends": [
     "react-app",
     "eslint:recommended",
-    // "plugin:react-recommended",
-    "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -33,7 +29,6 @@
       "warn",
       { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }
     ],
-    "import/no-anonymous-default-export": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "import/no-anonymous-default-export": "off"
   }
 }

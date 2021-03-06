@@ -1,22 +1,12 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-require("dotenv").config();
-const express = require("express");
-const path = require("path");
-const { connectToDb } = require("./lib/database");
-
-// const {
-//   insertUser,
-//   getQuestionDoc,
-//   insertResult,
-//   getQuestions,
-
-//   getResultsByQuestionID,
-//   getResultAnswers,
-//   checkUserID,
-// } = require("./lib/databaseMethods");
+import dotenv from "dotenv";
+import { connectToDb } from "./lib/database.js";
+import { getRecipes } from "./lib/databaseMethods.js";
+import express from "express";
+import path from "path";
+dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 5000;
 app.use(express.json());
 
 // Serve any static files
@@ -29,6 +19,18 @@ app.use(
 // Handle React routing, return all requests to React app
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
+app.get("/api/recipes/", async (req, res) => {
+  try {
+    const recipes = await getRecipes();
+    res.send(recipes);
+  } catch (e) {
+    console.error(e);
+    res
+      .status(500)
+      .send("An unexpected server error occured. Please try again later.");
+  }
 });
 
 async function run() {
